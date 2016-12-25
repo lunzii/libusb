@@ -46,7 +46,6 @@
 		008FBFA51628B84200BC5BE2 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 008FBFA41628B84200BC5BE2 /* config.h */; };
 		008FBFA71628B87000BC5BE2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008FBFA61628B87000BC5BE2 /* CoreFoundation.framework */; };
 		008FBFA91628B88000BC5BE2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008FBFA81628B88000BC5BE2 /* IOKit.framework */; };
-		008FBFAB1628B8CB00BC5BE2 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 008FBFAA1628B8CB00BC5BE2 /* libobjc.dylib */; };
 		008FBFEF1628BA3500BC5BE2 /* xusb.c in Sources */ = {isa = PBXBuildFile; fileRef = 008FBFED1628BA0E00BC5BE2 /* xusb.c */; };
 		008FBFF01628BA3A00BC5BE2 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 008FBF311628B79300BC5BE2 /* libusb-1.0.0.dylib */; };
 		008FBFFF1628BB9600BC5BE2 /* dpfp.c in Sources */ = {isa = PBXBuildFile; fileRef = 008FBFD71628BA0E00BC5BE2 /* dpfp.c */; };
@@ -251,6 +250,8 @@
 		1443EE8716417E63007E0579 /* libusb.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libusb.xcconfig; sourceTree = SOURCE_ROOT; };
 		1443EE8816417E63007E0579 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = SOURCE_ROOT; };
 		1443EE8916417EA6007E0579 /* libusb_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = libusb_release.xcconfig; sourceTree = SOURCE_ROOT; };
+		C8440D981E0F683400EB0EF4 /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		C8440D9A1E0F685200EB0EF4 /* libobjc.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.A.tbd; path = usr/lib/libobjc.A.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,7 +267,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				008FBFAB1628B8CB00BC5BE2 /* libobjc.dylib in Frameworks */,
 				008FBFA91628B88000BC5BE2 /* IOKit.framework in Frameworks */,
 				008FBFA71628B87000BC5BE2 /* CoreFoundation.framework in Frameworks */,
 			);
@@ -324,6 +324,7 @@
 				008FBFC81628BA0E00BC5BE2 /* examples */,
 				1443EE8A16419057007E0579 /* Apple */,
 				008FBF321628B79300BC5BE2 /* Products */,
+				C8440D971E0F683400EB0EF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -413,6 +414,15 @@
 			);
 			name = Apple;
 			path = ../libusb;
+			sourceTree = "<group>";
+		};
+		C8440D971E0F683400EB0EF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8440D9A1E0F685200EB0EF4 /* libobjc.A.tbd */,
+				C8440D981E0F683400EB0EF4 /* libobjc.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
